@@ -22,14 +22,14 @@
 
 <body>
 
-    <div class="d-flex flex-column vh-100 vw-100 justify-content-center align-items-center text-white dark-mode">
+    <div class="d-flex flex-column vh-100 vw-100 justify-content-center align-items-center text-white dark-mode" id="collapseParent">
 
         <p class="display-2 mb-3 fw-normal">Schedule</p>
         <a id="getSchedulePCKL" class="btn btn-outline-primary mb-3" data-bs-toggle="collapse" href="#collapsePCKL"
             role="button" aria-expanded="false" aria-controls="collapsePCKL">
             PC - KL
         </a>
-        <div class="collapse" id="collapsePCKL">
+        <div class="collapse" id="collapsePCKL" data-bs-parent="#collapseParent">
             <div id="trainInfoPCKL" class="card card-body bg-transparent text-center">
             </div>
         </div>
@@ -37,7 +37,7 @@
             role="button" aria-expanded="false" aria-controls="collapseKLPC">
             KL - PC
         </a>
-        <div class="collapse" id="collapseKLPC">
+        <div class="collapse" id="collapseKLPC" data-bs-parent="#collapseParent">
             <div id="trainInfoKLPC" class="card card-body bg-transparent text-center">
             </div>
         </div>

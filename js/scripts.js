@@ -37,7 +37,7 @@ $(document).ready(function () {
             .filter(schedule => schedule.departureDate > currentTime)
             .sort((a, b) => a.departureDate - b.departureDate);
 
-        return upcomingTrains.slice(0, 3);
+        return upcomingTrains.slice(0, 5);
     }
 
     function parseTime(timeStr) {
