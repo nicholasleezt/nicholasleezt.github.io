@@ -10,35 +10,42 @@
 
     <link rel="stylesheet" href="css/custom.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: "Plus Jakarta Sans", sans-serif;
+        }
+    </style>
 </head>
 
-<body class="text-light dark-mode">
+<body class="bg-[#121212] text-gray-100">
 
-    <main class="container py-5" style="max-width: 42rem;">
+    <main class="container mx-auto px-6 py-12 max-w-2xl">
 
-        <header class="mb-3">
-            <h1 class="display-5 fw-bold">Nicholas Lee</h1>
+        <header class="mb-4">
+            <h1 class="text-5xl font-bold">Nicholas Lee</h1>
         </header>
-        <p class="mb-3 fst-italic"><a href="https://youtu.be/jGBmN6-dsqw"
-                class="link-light link-underline link-underline-opacity-0">membaca itu jambatan ilmu</a>
+        <p class="mb-4 italic"><a href="https://youtu.be/jGBmN6-dsqw"
+                class="text-gray-100 no-underline hover:text-gray-300">membaca itu jambatan ilmu</a>
         </p>
-        <section class="mb-3">
-            <h2 class="fw-bold mb-3">Socials</h2>
-            <ul>
-                <li class="mb-2"><a href="https://instagram.com/nicholasleezt">Instagram</a></li>
-                <li class="mb-2"><a href="https://x.com/nicholasleezt">X</a></li>
-                <li class="mb-2"><a href="https://www.linkedin.com/in/nicholasleezt/">LinkedIn</a></li>
-                <li class="mb-2"><a href="https://github.com/nicholasleezt">GitHub</a></li>
-                <li class="mb-2"><a href="https://flickr.com/nicholasleezt">Flickr</a></li>
+        <section class="mb-4">
+            <h2 class="font-bold mb-4 text-3xl">Socials</h2>
+            <ul class="list-disc pl-5">
+                <li class="mb-2"><a href="https://instagram.com/nicholasleezt"
+                        class="text-gray-100 underline hover:text-gray-300">Instagram</a></li>
+                <li class="mb-2"><a href="https://x.com/nicholasleezt"
+                        class="text-gray-100 underline hover:text-gray-300">X</a></li>
+                <li class="mb-2"><a href="https://www.linkedin.com/in/nicholasleezt/"
+                        class="text-gray-100 underline hover:text-gray-300">LinkedIn</a></li>
+                <li class="mb-2"><a href="https://github.com/nicholasleezt"
+                        class="text-gray-100 underline hover:text-gray-300">GitHub</a></li>
+                <li class="mb-2"><a href="https://flickr.com/nicholasleezt"
+                        class="text-gray-100 underline hover:text-gray-300">Flickr</a></li>
             </ul>
         </section>
-        <footer class="mt-5 pt-4 border-top">
-            <p>Copyright &copy; <span id="year"></span> Nicholas Lee</p>
+        <footer>
+            <hr class="my-8 border-foreground border-gray-700">
+            <p class="text-sm mb-4">&copy; <span id="year"></span> Lee Ziteng Nicholas</p>
         </footer>
     </main>
 
